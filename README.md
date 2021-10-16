@@ -1,6 +1,9 @@
 # Certificate to PFX
 `openssl pkcs12 -export -out CERT.pfx -inkey CERT.key -in CERT.cer`
 
+# Converter certificado Sicredi
+`openssl x509 -inform der -in SICREDI_OPCAO_LANG.cer -out SICREDI_OPCAO_LANG.1.cer`
+
 # Export PFX to Base64
 `$fileContentBytes = get-content .\CERT.pfx -Encoding Byte`
 
