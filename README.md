@@ -1,3 +1,7 @@
+# Gerar certificado Sicredi
+`openssl genrsa -des3 -out SICREDI_DIGITALNET.key 2048`
+`openssl req -new -key SICREDI_DIGITALNET.key -out SICREDI_DIGITALNET.csr`
+
 # Certificate to PFX
 `openssl pkcs12 -export -out CERT.pfx -inkey CERT.key -in CERT.cer`
 
