@@ -3,6 +3,9 @@
 
 `openssl req -new -key SICREDI_DIGITALNET.key -out SICREDI_DIGITALNET.csr`
 
+![image](https://user-images.githubusercontent.com/6507492/151967222-8b994b24-605a-4fc9-9051-52e02023f965.png)
+
+
 
 # Gerar certificado Itaú
 `openssl genpkey -out private.pem -algorithm RSA -pkeyopt rsa_keygen_bits:2048`
