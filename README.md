@@ -3,6 +3,13 @@
 
 `openssl req -new -key SICREDI_DIGITALNET.key -out SICREDI_DIGITALNET.csr`
 
+
+# Gerar certificado Itaú
+`openssl genpkey -out private.pem -algorithm RSA -pkeyopt rsa_keygen_bits:2048`
+
+`openssl rsa -in private.pem -pubout -out public.pem`
+
+
 # Certificate to PFX
 `openssl pkcs12 -export -out CERT.pfx -inkey CERT.key -in CERT.cer`
 
